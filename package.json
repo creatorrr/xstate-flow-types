@@ -1,0 +1,23 @@
+{
+  "name": "xstate-flow-types",
+  "version": "1.0.0",
+  "description": "Flow types for xstate and its packages",
+  "main": "exports/index.js.flow",
+  "repository": "git@github.com:creatorrr/xstate-flow-types.git",
+  "author": "Diwank Singh Tomer <diwank.singh@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "flowgen": "flowgen --compile-tests --add-flow-header node_modules/xstate/es/",
+    "prepublish": "yarn flowgen"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-plugin-flow-runtime": "^0.18.0",
+    "flowgen": "^1.8.0",
+    "xstate": "^4.5.0"
+  }
+}
